@@ -233,5 +233,16 @@ $switch_mess = htmlspecialchars($_POST['switch_mess']);
       });
   })();
 </script>
+
+    <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-6 mt-16 shadow-inner">
+    <p class="text-sm md:text-base">
+      © 2025 Hostel Food Optimization System. All rights reserved. | Licensed under <span class="font-semibold">VIT License</span>
+    </p>
+    <p class="text-sm mt-1">
+      Developed by <span class="font-semibold text-yellow-300">KUMAR MILIND</span> & <span class="font-semibold text-yellow-300">AMRIT ANAND</span>
+    </p>
+  </footer>
+  
 </body>
 </html>

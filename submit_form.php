@@ -40,6 +40,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hostel Mess Preferences</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    footer { background: #0b2545; color: #fff; text-align: center; padding: 12px 0; margin-top: 40px; }
+    footer span { color: #facc15; font-weight: 600; }
+  </style>
+</head>
+<body>
+
 <!-- tsparticles container (background effect) -->
 <div id="tsparticles"></div>
 
@@ -84,3 +98,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     })();
 </script>
 
+      <!-- Footer -->
+<footer class="bg-blue-900/60 backdrop-blur-md text-white text-center py-6 mt-16 shadow-inner w-full absolute bottom-0 left-0">
+    <p class="text-sm md:text-base">
+      © 2025 Hostel Food Optimization System. All rights reserved. | Licensed under <span class="font-semibold">VIT License</span>
+    </p>
+    <p class="text-sm mt-1">
+      Developed by <span class="font-semibold text-yellow-300">KUMAR MILIND</span> & <span class="font-semibold text-yellow-300">AMRIT ANAND</span>
+    </p>
+  </footer>
+    
+</body>
+</html>

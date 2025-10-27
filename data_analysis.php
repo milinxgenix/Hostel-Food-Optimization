@@ -105,7 +105,7 @@ if ($row = $result->fetch_assoc()) $popular_block = $row['hostel_block'];
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen p-8">
+<body class="bg-gray-300 min-h-screen flex flex-col justify-between">
   <div id="tsparticles"></div>
   <h1 class="text-3xl font-bold text-center mb-8 text-blue-700">Admin: Mess Preferences Data Analysis</h1>
   <!-- Summary Cards -->
@@ -224,8 +224,9 @@ if ($row = $result->fetch_assoc()) $popular_block = $row['hostel_block'];
       <canvas id="dietHist"></canvas>
     </div>
   </div>
-  <div class="text-center mt-8">
-    <a href="logout.php" class="text-blue-600 hover:underline font-semibold">Logout</a>
+  <div class="text-center mt-8 mb-0">
+    <a href="logout.php" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 mt-6 mb-8 mx-auto w-fit">Logout</a>
+
   </div>
   <script>
     // Vibrant color palettes
@@ -321,5 +322,16 @@ if ($row = $result->fetch_assoc()) $popular_block = $row['hostel_block'];
       options: { scales: { y: { beginAtZero: true } } }
     });
   </script>
+
+      <!-- Footer -->
+<footer class="bg-blue-900/60 backdrop-blur-md text-white text-center py-3 shadow-inner w-full text-sm">
+    <p class="text-sm md:text-base">
+      © 2025 Hostel Food Optimization System. All rights reserved. | Licensed under <span class="font-semibold">VIT License</span>
+    </p>
+    <p class="text-sm mt-1">
+      Developed by <span class="font-semibold text-yellow-300">KUMAR MILIND</span> & <span class="font-semibold text-yellow-300">AMRIT ANAND</span>
+    </p>
+  </footer>
+  
 </body>
 </html>

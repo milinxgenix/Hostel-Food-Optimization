@@ -21,7 +21,9 @@
     .header-actions { position: fixed; right: 20px; top: 18px; z-index: 60; }
   </style>
 </head>
-<body class="min-h-screen bg-pink-50 relative overflow-x-hidden">
+<body class="min-h-screen relative overflow-x-hidden" style="background: linear-gradient(135deg, #fff4d9, #ffe6cc);">
+
+
   <!-- Particles container (primary) -->
   <div id="tsparticles"></div>
 
@@ -29,8 +31,7 @@
   <div id="content" class="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-8 py-28">
     <!-- Header row: title centered, login/register at top-right -->
     <div class="relative">
-  <h1 class="text-6xl md:text-7xl font-extrabold text-center text-blue-800">Hostel Mess Preferences</h1>
-  <p class="text-center text-lg text-gray-700 mt-4 max-w-3xl mx-auto">Collecting mess choices and special diet preferences to reduce food waste and improve meal planning.</p>
+  <h1 id="typing-text" class="text-6xl md:text-7xl font-extrabold text-center text-black-800"></h1>
       <div class="header-actions flex gap-3">
         <a href="login.php" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700">Login</a>
         <a href="register.php" class="px-6 py-3 bg-white border border-blue-600 text-blue-600 rounded-lg font-semibold shadow hover:bg-blue-50">Register</a>
@@ -40,7 +41,7 @@
 
     <!-- Decorative intro + description -->
     <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-      <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-12 shadow-2xl flex flex-col justify-center">
+      <div class="bg-white/30 backdrop-blur-md rounded-2xl p-12 shadow-2xl border border-white/40 flex flex-col justify-center">
         <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-6">How this site reduces hostel food waste</h2>
 
         <!-- Small SVG infographic: Students -> Form -> DB -> Dashboard -> Less Waste -->
@@ -122,7 +123,7 @@
 
       <div class="rounded-2xl p-8 flex flex-col items-center justify-center">
         <img src="images/1.png" alt="Decor" class="w-full md:w-[640px] rounded-2xl shadow-xl mb-8">
-        <div class="bg-white rounded-2xl p-8 shadow w-full">
+        <div class="bg-white/30 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-white/40 w-full">
           <h3 class="text-2xl font-semibold text-gray-800 mb-4">Quick actions</h3>
           <div class="flex flex-col gap-4">
             <a href="login.php" class="px-6 py-4 bg-blue-600 text-white rounded-lg text-center font-semibold hover:bg-blue-700">Admin Login</a>
@@ -136,7 +137,6 @@
 
     <!-- Extra decorative images in corners -->
   <img src="images/1.png" class="corner-img top-left" alt="decor">
-  <img src="images/1.png" class="corner-img top-right" alt="decor">
   <img src="images/1.png" class="corner-img bottom-left" alt="decor">
   <img src="images/1.png" class="corner-img bottom-right" alt="decor">
 
@@ -194,5 +194,33 @@
       });
     })();
   </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const text = "Hostel Food Optimization";
+  const element = document.getElementById("typing-text");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      element.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 100); // typing speed in ms
+    }
+  }
+
+  type();
+});
+</script>
+
+    <!-- Footer -->
+<footer class="bg-blue-900/60 backdrop-blur-md text-white text-center py-6 mt-16 shadow-inner w-full absolute bottom-0 left-0">
+    <p class="text-sm md:text-base">
+      © 2025 Hostel Food Optimization System. All rights reserved. | Licensed under <span class="font-semibold">VIT License</span>
+    </p>
+    <p class="text-sm mt-1">
+      Developed by <span class="font-semibold text-yellow-300">KUMAR MILIND</span> & <span class="font-semibold text-yellow-300">AMRIT ANAND</span>
+    </p>
+  </footer>
+
 </body>
 </html>

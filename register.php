@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" class="absolute bottom-10 right-5 w-48 h-48 rounded-2xl shadow-2xl object-cover opacity-70 transform rotate-[10deg]" />
 
   <!-- Form -->
-  <div class="w-full max-w-2xl p-10 bg-white rounded-2xl shadow-2xl relative z-10">
+<div class="w-full max-w-2xl p-10 bg-white/30 backdrop-blur-md rounded-2xl shadow-2xl border border-white/40 relative z-10">
     <h1 class="text-4xl font-extrabold text-center text-green-600 mb-6 animate-bounce">Admin Registration</h1>
 
     <?php if ($error) { ?><p class="text-red-600 font-semibold text-center mb-4"><?= $error ?></p><?php } ?>
@@ -138,5 +138,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         });
     })();
   </script>
+
+      <!-- Footer -->
+<footer class="bg-blue-900/60 backdrop-blur-md text-white text-center py-6 mt-16 shadow-inner w-full absolute bottom-0 left-0">
+    <p class="text-sm md:text-base">
+      © 2025 Hostel Food Optimization System. All rights reserved. | Licensed under <span class="font-semibold">VIT License</span>
+    </p>
+    <p class="text-sm mt-1">
+      Developed by <span class="font-semibold text-yellow-300">KUMAR MILIND</span> & <span class="font-semibold text-yellow-300">AMRIT ANAND</span>
+    </p>
+  </footer>
+
 </body>
 </html>
