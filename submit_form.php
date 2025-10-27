@@ -2,15 +2,7 @@
 session_start();
 
 // Database connection
-$host = "localhost";
-$user = "root";
-$pass = ""; // or your MySQL password
-$db   = "hostel_food_waste";
-
-$conn = new mysqli("sql208.hstn.me", "mseet_40264447", "Alohomora", "mseet_40264447_hostel_food");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'db_connect.php';
 
 // Handle POST request
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

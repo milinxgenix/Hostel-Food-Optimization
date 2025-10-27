@@ -4,13 +4,9 @@ if (!isset($_SESSION['admin'])) {
   header('Location: login.php');
   exit();
 }
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "hostel_food_waste";
-$conn = new mysqli("sql208.hstn.me", "mseet_40264447", "Alohomora", "mseet_40264447_hostel_food");
+// Include the centralized database connection file
+include 'db_connect.php';
 
-if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
 $selected_mess_type = isset($_GET['mess_type']) ? $_GET['mess_type'] : '';
 $selected_block = isset($_GET['hostel_block']) ? $_GET['hostel_block'] : '';
 // Restrict mess type filter to the allowed set and provide an 'All' option

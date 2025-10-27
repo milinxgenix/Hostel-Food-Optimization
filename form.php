@@ -6,13 +6,9 @@ error_reporting(E_ALL);
 
 $submitted = false;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Database connection
-    $conn = new mysqli("sql208.hstn.me", "mseet_40264447", "Alohomora", "mseet_40264447_hostel_food");
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+include 'db_connect.php';         // centralized connection
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  // Collect POST data safely
 $student_name = htmlspecialchars($_POST['student_name']);
 $registration_number = htmlspecialchars($_POST['registration_number']);

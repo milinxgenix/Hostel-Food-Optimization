@@ -2,13 +2,7 @@
 session_start();
 
 // Database connection
-$host = "localhost";
-$user = "root";   // change if needed
-$pass = "";       // change if needed
-$db   = "hostel_food_waste"; 
-
-$conn = new mysqli("sql208.hstn.me", "mseet_40264447", "Alohomora", "mseet_40264447_hostel_food");
-if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
+include 'db_connect.php';
 
 $success = "";
 $error = "";

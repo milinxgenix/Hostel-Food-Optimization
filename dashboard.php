@@ -8,13 +8,10 @@ $admin_name = isset($_SESSION['admin']) ? $_SESSION['admin'] : 'Admin';
 ?>
 <?php
 // Fetch some quick stats for mini-charts on dashboard
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "hostel_food_waste";
-$conn = new mysqli("sql208.hstn.me", "mseet_40264447", "Alohomora", "mseet_40264447_hostel_food");
 
-if ($conn->connect_error) { /* silent fallback */ }
+include 'db_connect.php';
+
+
 // Allowed lists (same as data_analysis)
 $allowed_mess = ['Veg', 'Non-Veg', 'Special', 'All'];
 $blocks = [];
