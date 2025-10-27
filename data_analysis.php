@@ -8,7 +8,8 @@ $host = "localhost";
 $user = "root";
 $pass = "";
 $db   = "hostel_food_waste";
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = new mysqli("sqlXXX.hstn.me", "mseet_40264447", "Alohomora", "mseet_40264447_hostel_food");
+
 if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }
 $selected_mess_type = isset($_GET['mess_type']) ? $_GET['mess_type'] : '';
 $selected_block = isset($_GET['hostel_block']) ? $_GET['hostel_block'] : '';

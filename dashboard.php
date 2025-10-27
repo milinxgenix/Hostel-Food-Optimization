@@ -12,7 +12,8 @@ $host = "localhost";
 $user = "root";
 $pass = "";
 $db   = "hostel_food_waste";
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = new mysqli("sqlXXX.hstn.me", "mseet_40264447", "Alohomora", "mseet_40264447_hostel_food");
+
 if ($conn->connect_error) { /* silent fallback */ }
 // Allowed lists (same as data_analysis)
 $allowed_mess = ['Veg', 'Non-Veg', 'Special', 'All'];

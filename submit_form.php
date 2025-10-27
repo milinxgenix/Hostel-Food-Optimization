@@ -7,7 +7,7 @@ $user = "root";
 $pass = ""; // or your MySQL password
 $db   = "hostel_food_waste";
 
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = new mysqli("sqlXXX.hstn.me", "mseet_40264447", "Alohomora", "mseet_40264447_hostel_food");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
