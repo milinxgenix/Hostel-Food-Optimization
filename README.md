@@ -181,9 +181,3 @@ INSERT INTO admin_register (username, password_hash) VALUES ('admin', '<hash>');
 
 ## License
 
-If you'd like, I can:
-- Create `README.md` in the repo now.
-- Add an example SQL migration script and explicit normalization SQL.
-- Add a non-destructive “canonicalization” script that creates `canonical_mess_type` and `canonical_block` columns and populates them.
-
-Which of these would you like next?
